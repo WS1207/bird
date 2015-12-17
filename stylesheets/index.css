@@ -4,8 +4,5 @@ body{
 }
 canvas{
     display:block;
-    border-radius:10px;
-    box-shadow:1px 2px 5px rgb(135, 181, 212);
-    margin:30px auto;
-    background:url(../images/house.png) no-repeat bottom center,url(../images/bg-sky.jpg) repeat-x 0 0;
+    background:url(../images/house.png) repeat-x bottom center,url(../images/bg-sky.jpg) repeat-x 0 0;
 }
