@@ -1,5 +1,5 @@
 window.onload=function(){
-
+  "use strict";
   var W  = document.documentElement.clientWidth,
       H = document.documentElement.clientHeight;
   // 检测矩形之间的碰撞
@@ -32,7 +32,7 @@ window.onload=function(){
 	r.push(tun);
       }
       return r;
-    }
+    };
   })();
 
   var
