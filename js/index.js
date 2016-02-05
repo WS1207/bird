@@ -52,7 +52,7 @@ window.onload=function(){
   canvas.addEventListener('click',function(e){
     bird.y -= upspeed;
   },false);
-  canvas.addEventListener('touchstart',function(e){
+  canvas.addEventListener('touchend',function(e){
     bird.y -= upspeed;
   },false);
 
