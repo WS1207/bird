@@ -43,7 +43,7 @@ window.onload=function(){
   //管道间隙
   spec,
   //鸟
-  bird = {x:400,y:210,w:30,h:30},
+  bird = {x:100,y:310,w:30,h:30},
   //管道
   tunel = generateTunel();
   canvas.width = W;
