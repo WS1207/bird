@@ -52,6 +52,9 @@ window.onload=function(){
   canvas.addEventListener('click',function(e){
     bird.y -= upspeed;
   },false);
+  canvas.addEventListener('touchstart',function(e){
+    bird.y -= upspeed;
+  },false);
 
   var dropspeed = 2;
   var movespeed = 3;
@@ -62,12 +65,11 @@ window.onload=function(){
     bird.y += dropspeed;
     ctx.fillRect(bird.x,bird.y,bird.w,bird.h);
 
-    tunel.map(function(d,i){
+    tunel.forEach(function(d,i){
       d.top.x -= movespeed;  d.bottom.x -= movespeed;
       //柱子超出画布后 随机生成符合一定规则的柱子
       if( d.top.x < -d.top.w){
 	d.top.x = d.bottom.x = W;
-
 	d.top.h = Math.floor( Math.random()*50  + H*0.2 );
 	// spec = Math.floor( Math.random()*20 + 100);
 	spec = 200;
