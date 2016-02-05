@@ -1,7 +1,8 @@
 window.onload=function(){
   "use strict";
-  var W  = document.documentElement.clientWidth,
-      H = document.documentElement.clientHeight;
+  // var W  = document.documentElement.clientWidth,
+  //     H = document.documentElement.clientHeight;
+  var W = 400,H = 600;
   // 检测矩形之间的碰撞
   var recvsrec =  function(rect0,rect1){
     if (rect0.x >= rect1.x && rect0.x >= rect1.x + rect1.w) {
