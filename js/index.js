@@ -129,8 +129,10 @@ var startGame = function () {
 };
 
 // document.addEventListener('click',birdUp,false);
-document.addEventListener('touchstart',birdUp,false);
-
-draw();
+if( 'ontouchstart' in document ){
+    document.addEventListener('touchstart',birdUp,false);
+}else{
+    document.addEventListener('click',birdUp,false);
+}
 startGame();
 
