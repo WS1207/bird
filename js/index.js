@@ -120,7 +120,7 @@ var draw = function () {
 
 var birdUp;
 birdUp = function (e) {
-    bird.y -= 30;
+    bird.y -= 26;
     g = 1;
     e.preventDefault();
 };
